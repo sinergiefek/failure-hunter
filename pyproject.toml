@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "failure-hunter"
+version = "0.1.0"
+description = "Static AST Analyzer & Linter to Hunt Down Silent Failures, Swallowed Errors, and Dangerous Fallbacks"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Setijono", email = "pipi@sinergimitravisitama.my.id" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Software Development :: Testing"
+]
+keywords = ["linter", "ast", "silent-failure", "error-handling", "qa", "code-quality", "pstack"]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+failure-hunter = "failure_hunter.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/sinergiefek/failure-hunter"
+Documentation = "https://github.com/sinergiefek/failure-hunter#readme"
+Issues = "https://github.com/sinergiefek/failure-hunter/issues"
+Enterprise = "https://sinergimitravisitama.my.id"
